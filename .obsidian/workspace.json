@@ -193,6 +193,8 @@
   },
   "active": "4c0e9ed031c15997",
   "lastOpenFiles": [
+    "gitsshkey.pub",
+    "gitsshkey",
     "IPHashing_LoadBalancer.py",
     "RoundRobin_LoadBalancer.py",
     "LeastConnections_LoadBalancer.py",
@@ -202,8 +204,6 @@
     "static",
     "Flask_WebServer/static/script.js",
     "Flask_WebServer/static/style.css",
-    "Flask_WebServer/static/index.html",
-    "Flask_WebServer/static",
     "Index.md",
     "Understand Load Balancing Basics.md",
     "Tech stack.md",
