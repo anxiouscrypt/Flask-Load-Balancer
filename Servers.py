@@ -55,3 +55,25 @@ class Server:
             "status": self.status,
             "connection_counts": self.connection_counts
         }
+
+    def check_health_status(self):
+        try:
+        # Make the request and check the response status code
+            response = requests.get(self.ip + "/status", timeout=3)
+
+        # Only attempt to parse the JSON if the status code is 200 (OK)
+            if response.status_code == 200:
+                try:
+                # Try to parse the JSON response
+                    return response.json().get("status") == "healthy"
+                except ValueError:
+                # Handle the case where the response is not valid JSON
+                    print(f"Error: Response from {self.ip} is not valid JSON.")
+                    return False
+            else:
+                print(f"Error: Server {self.ip} returned status code {response.status_code}")
+                return False
+        except requests.exceptions.RequestException as e:
+        # Handle network-related errors (e.g., connection error, timeout)
+            print(f"Error: Failed to reach server {self.ip} - {e}")
+            return False
