@@ -35,16 +35,18 @@ function displayServerStats(data) {
     serverList.innerHTML = '';  // Clear previous list
 
     // Iterate through the servers and update their status
-    Object.keys(data.servers).forEach(server => {
-        const statusClass = data.servers[server].status === "healthy" ? "healthy" : "down";
+    Object.keys(data.servers).forEach(serverUrl => {
+        const server = data.servers[serverUrl];
+        const statusClass = server.status === "healthy" ? "healthy" : "down";
         const serverDiv = document.createElement("div");
         serverDiv.classList.add(statusClass);
-        serverDiv.innerHTML = `${server}: ${data.servers[server].status}`;
+        serverDiv.innerHTML = `${serverUrl}: ${server.status} - Requests Handled: ${server.requests_handled}`;
         serverList.appendChild(serverDiv);
     });
 
+    // Display the total requests handled by all servers
     const totalRequests = document.getElementById("stats-container");
-    totalRequests.innerHTML = `<p>Total Requests: ${data.total_requests}</p>`;
+    totalRequests.innerHTML = `<p>Total Requests Handled by All Servers: ${data.total_requests}</p>`;
 }
 
 // Add Server

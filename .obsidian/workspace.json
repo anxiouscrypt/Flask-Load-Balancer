@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech stack.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tech stack"
+              "title": "Index"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Workflow.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Workflow"
+              "title": "Index"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Workflow.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Workflow"
+              "title": "Backlinks for Index"
             }
           },
           {
@@ -141,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Workflow.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Workflow"
+              "title": "Outgoing links from Index"
             }
           },
           {
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Workflow.md"
+                "file": "Index.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Workflow"
+              "title": "Outline of Index"
             }
           }
         ]
@@ -191,22 +191,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c0e9ed031c15997",
+  "active": "afa9798dd728803b",
   "lastOpenFiles": [
-    "gitsshkey.pub",
-    "gitsshkey",
-    "IPHashing_LoadBalancer.py",
-    "RoundRobin_LoadBalancer.py",
-    "LeastConnections_LoadBalancer.py",
-    "static/style.css",
-    "static/script.js",
-    "static/index.html",
-    "static",
-    "Flask_WebServer/static/script.js",
-    "Flask_WebServer/static/style.css",
+    "Flask_WebServer/Server4.py",
+    "Flask_WebServer/Server3 copy.py",
+    "Flask_WebServer/Server3.py",
+    "Flask_WebServer/Server2.py",
+    "Flask_WebServer/Server1 copy 2.py",
+    "Flask_WebServer/Server1 copy.py",
+    "__pycache__/globals.cpython-39.pyc",
+    "globals.py",
+    "__pycache__/LoadBalancer.cpython-39.pyc",
+    "__pycache__/Servers.cpython-39.pyc",
+    "main.py",
+    "Ideas/Tech stack.md",
+    "Ideas/Understand Load Balancing Basics.md",
+    "Workflow.md",
+    "Ideas/Workflow.md",
     "Index.md",
     "Understand Load Balancing Basics.md",
-    "Tech stack.md",
-    "Workflow.md"
+    "Tech stack.md"
   ]
 }
