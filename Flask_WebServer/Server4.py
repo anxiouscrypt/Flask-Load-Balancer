@@ -9,7 +9,7 @@ status = "healthy"
 @app.route('/')
 
 def index():
-    return jsonify({"server": "Server 3", "message": "Hello from Server 3!"})
+    return jsonify({"server": "Server 4", "message": "Hello from Server 4!"})
     
 
 @app.route('/status')
@@ -31,4 +31,4 @@ def set_health():
     return jsonify({"message": "Health Updated", "Status": status}), 201
 
 if __name__ == '__main__':
-    app.run(port=5003)  # Run Server 1 on port 5001
+    app.run(port=5004)  # Run Server 1 on port 5001

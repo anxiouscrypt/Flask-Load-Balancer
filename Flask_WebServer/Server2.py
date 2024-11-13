@@ -4,7 +4,7 @@ import logging
 
 app = Flask(__name__)
 
-health_status = "healthy"
+status = "healthy"
 
 @app.route('/')
 
@@ -12,9 +12,9 @@ def index():
     return jsonify({"server": "Server 2", "message": "Hello from Server 2!"})
     
 
-@app.route('/health')
+@app.route('/status')
 def health_check():
-    return jsonify({"status": health_status})
+    return jsonify({"status": status})
 
 logging.basicConfig(
     level=logging.INFO,  # Set log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
@@ -26,9 +26,9 @@ logging.basicConfig(
 
 @app.route('/set_health', methods=[ 'POST'])
 def set_health():
-    global health_status
-    health_status = request.json.get('health')
-    return jsonify({"message": "Health Updated", "Status": health_status}), 201
+    global status
+    status = request.json.get('status')
+    return jsonify({"message": "Health Updated", "Status": status}), 201
 
 if __name__ == '__main__':
     app.run(port=5002)  # Run Server 1 on port 5001
